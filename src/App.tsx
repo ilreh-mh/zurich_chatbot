@@ -1,18 +1,12 @@
 import React, { useState } from 'react';
+import Button from '@mui/material/Button';
+import Chat from './components/Chat';
 
 const App = () => {
 
-  const [count, setCount] = useState(0);
   return (
     <div className="App">
-      <header className="App-header">
-        <p>
-          {count}
-        </p>
-        <button onClick={() => setCount(count+1)}>
-          click
-        </button>
-      </header>
+      <Chat />
     </div>
   );
 }
